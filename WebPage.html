@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Sign Up</title>
+</head>
+<body bgcolor="aqua">
+    <div id="reg">
+    <h1 align="center">Welcome!</h1>
+    <h2 align="center">Please enter your information to register</h2>
+        <form method="post" action="signup.php">
+            <table border="0" align="center">
+                <tr>
+                    <td>
+                        Title:
+                    </td>
+                    <td>
+                        <select id="title" name="title">
+                            <option value="select">Select</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mrs.">Mrs.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        First name:
+                    </td>
+                    <td>
+                        <input type="text" id="fn" name="firstName" /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last name:
+                    </td>
+                    <td>
+                        <input type="text" id="ln" name="lastName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Position:
+                    </td>
+                    <td>
+                        <select name="position" id="pos">
+                            <option value="select">Select</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Clerk">Clerk</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth:
+                    </td>
+                    <td>
+                        <input id="dob" type="date" name="DOB" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        <select name="gender" id="gen">
+                            <option value="select">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Years in company:
+                    </td>
+                    <td>
+                        <input type="number" id="y" name="yoe" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="button" type="submit" value="Submit" name="submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+</div>
+    <div id="delete_dat">
+        <form method="post" action="delete.php">
+            <h2 align="center">
+                Enter the following data to delete
+            </h2>
+            <table align="center">
+                <tr>
+                    <td>
+                        First Name:
+                    </td>
+                    <td>
+                        <input type="text" name="firstNameD" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name:
+                    </td>
+                    <td>
+                        <input type="text" name="lastNameD" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth:
+                    </td>
+                    <td>
+                        <input type="date" name="dobD" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Delete" name="delete" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="update">
+        <form method="post" action="update.php">
+            <h2 align="center">Enter information here to update</h2>
+            <h3 align="center">Old</h3>
+            <table align="center">
+                <tr>
+                    <td>
+                        First Name:
+                    </td>
+                    <td>
+                        <input type="text" name="firstNameUO" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last Name:
+                    </td>
+                    <td>
+                        <input type="text" name="lastNameUO" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth:
+                    </td>
+                    <td>
+                        <input type="date" name="dobUO" />
+                    </td>
+                </tr>
+            </table>
+            <h3 align="center">New</h3>
+            <table border="0" align="center">
+                <tr>
+                    <td>
+                        Title:
+                    </td>
+                    <td>
+                        <select id="title" name="titleU">
+                            <option value="select">Select</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Mrs.">Mrs.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        First name:
+                    </td>
+                    <td>
+                        <input type="text" id="fn" name="firstNameU" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Last name:
+                    </td>
+                    <td>
+                        <input type="text" id="ln" name="lastNameU" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Position:
+                    </td>
+                    <td>
+                        <select name="positionU" id="posU">
+                            <option value="select">Select</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Clerk">Clerk</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth:
+                    </td>
+                    <td>
+                        <input id="dob" type="date" name="DOBU" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        <select name="genderU" id="genU">
+                            <option value="select">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Years in company:
+                    </td>
+                    <td>
+                        <input type="number" id="y" name="yoeU" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="button" type="submit" value="Update" name="update" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
